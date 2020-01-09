@@ -10,8 +10,15 @@
     button { margin: 0 0 10px 0; }
     
  <script>
-$(document).ready
-    $("#panel").slideUp("slow");
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("<div>").slideDown("slow");
+  });
+});
+      $("#flip").click(function(){
+    $("<div>").slideUp("slow");
+  });
+});
     </script>
   </style>
 </head>
